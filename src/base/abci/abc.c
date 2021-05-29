@@ -22577,6 +22577,7 @@ int Abc_CommandSim( Abc_Frame_t * pAbc, int argc, char ** argv )
     char * pFileSim;
     char * pLogFileName = NULL;
     extern int Abc_NtkDarSeqSim( Abc_Ntk_t * pNtk, int nFrames, int nWords, int TimeOut, int fNew, int fMiter, int fVerbose, char * pFileSim );
+    
     // set defaults
     fNew       =  0;
     fComb      =  0;

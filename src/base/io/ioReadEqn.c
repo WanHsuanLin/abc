@@ -30,7 +30,7 @@ ABC_NAMESPACE_IMPL_START
 static Abc_Ntk_t * Io_ReadEqnNetwork( Extra_FileReader_t * p );
 static void        Io_ReadEqnStrCompact( char * pStr );
 static int         Io_ReadEqnStrFind( Vec_Ptr_t * vTokens, char * pName );
-static void        Io_ReadEqnStrCutAt( char * pStr, char * pStop, int fUniqueOnly, Vec_Ptr_t * vTokens );
+void        Io_ReadEqnStrCutAt( char * pStr, char * pStop, int fUniqueOnly, Vec_Ptr_t * vTokens ); //! modify: remove static
 
 ////////////////////////////////////////////////////////////////////////
 ///                     FUNCTION DEFINITIONS                         ///

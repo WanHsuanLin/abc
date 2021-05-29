@@ -116,7 +116,7 @@ char * Nm_ManStoreIdName( Nm_Man_t * p, int ObjId, int Type, char * pName, char 
     // check if the object with this ID is already stored
     if ( (pEntry = Nm_ManTableLookupId(p, ObjId)) )
     {
-        printf( "Nm_ManStoreIdName(): Entry with the same ID already exists.\n" );
+        printf( "Nm_ManStoreIdName(): Entry with the same ID already exists., name %s and %s\n", pName, pEntry->Name );
         return NULL;
     }
     // create a new entry
